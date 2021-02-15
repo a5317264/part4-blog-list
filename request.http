@@ -1,0 +1,64 @@
+DELETE http://localhost:3003/api/blogs/6029e440fc29f34fb2d75607
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1sdXVra2FpIiwiaWQiOiI2MDI5NDk4ZGIzYjBkMzM2MDFiNGMyODkiLCJpYXQiOjE2MTMzOTM2NDR9.6X6oEIXHvtAG0KyBMlDLKyD1zMuW_oOgNs_FQMXwmi4
+
+###
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1sdXVra2FpIiwiaWQiOiI2MDI5NDk4ZGIzYjBkMzM2MDFiNGMyODkiLCJpYXQiOjE2MTMzOTM2NDR9.6X6oEIXHvtAG0KyBMlDLKyD1zMuW_oOgNs_FQMXwmi4
+
+
+{
+  "title": "testtest",
+  "author": "test",
+  "url": "test.com",
+  "likes": 99
+}
+
+###
+GET http://localhost:3003/api/users
+
+###
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+  "username": "mluukkai",
+  "password": "salainen"
+}
+
+###
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+  "username": "mluukkai",
+  "name": "Matti Luukkainen",
+  "password": "salainen"
+}
+
+###
+GET http://localhost:3003/api/blogs
+
+###
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+  "title": "Today is good",
+  "author": "me",
+  "url": "sadf.com",
+  "likes": 999
+}
+###
+DELETE http://localhost:3003/api/blogs/601543a8c005b012b6d14cd8
+
+###
+PUT  http://localhost:3003/api/blogs/601543a7c005b012b6d14cd7
+Content-Type: application/json
+
+{
+  "title": "1234",
+  "author": "me",
+  "url": "sadf.com",
+  "likes": 999
+}
